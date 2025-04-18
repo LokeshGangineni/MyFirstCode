@@ -63,9 +63,10 @@ const mysql=require('mysql');
 const mysql = require('mysql');
 
 const conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Sukanya@1"
+    host: process.env.DB_HOST || "localhost",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "Sukanya@1",
+    database: process.env.DB_NAME || "nodedb"
 });
 
 // 1. Connect to MySQL server (no DB yet)
