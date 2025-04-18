@@ -1,5 +1,5 @@
 // const mysql=require('mysql');
-// import mysql from 'mysql'
+
 
 // const conn=mysql.createConnection({
 //     host:"localhost",
