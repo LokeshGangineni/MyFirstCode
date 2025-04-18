@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="/authntecation.js" async></script>
+</head>
+<body>
+    <div id="container">
+        <form id="form" action="register" method="post" target="_blank">
+            <h3 id="heading">Register Form</h3>
+           <label for="">FirstName : </label>   <input     placeholder="Enter FirstName" name="firstname" type="text"> <br>
+        <label for="">LastName :</label>  <input           placeholder="Enter LastName" name="lastname" type="text"><br>
+           <label for=""> Email : </label><input           placeholder="Enter Email" name="email"  type="email"><br>
+           <label for="">Password : </label> <input        placeholder="Enter password" name="password"  type="text"><br>
+           <label for="">ConfirmPassword : </label> <input placeholder="Enter Confirm Password"     name="confirmpassword"  type="text"><br>
+           <label for="">Phone  : </label> <input          placeholder="Enter Phone" name="phone"     type="text"><br>
+           <label for="">Age :</label>  <input             placeholder="Enter Age" name="age"     type="text"><br>
+           <label for="">Gender : </label> <input name="gender" value="Male" type="radio">
+           <label for="">Male</label><input value="Female" name="gender" type="radio"><label for="">Female</label><input value="Others" name="gender" type="radio"><label for="">Others</label><br>
+            <button type="submit">submit</button>
+            <p id="errorMsg"  style="color: red;"></p>
+            <br><br>
+            <p>Already Registered :  <a style="color: black;" href="/login.html">login</a></p>
+            
+        </form>
+    </div>
+</body>
+</html>

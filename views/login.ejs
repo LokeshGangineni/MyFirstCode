@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div data-aos="zoom-in" data-aos-duration="3000" id="container">
+        <form action="/login" method="post">
+            <h2 id="heading">Login Form</h2>
+
+            <label for="">UserName :</label>  
+            <input name="user" required placeholder="Enter UserName" type="text"><br>
+
+            <label for="">Password : </label> 
+            <input name="password" required placeholder="Enter Password" type="text"><br>
+
+            <button>Submit</button>
+
+            <% if (typeof errorMsg !== 'undefined' && errorMsg) { %>
+                <p id="errorMsg" style="color: red;"><%= errorMsg %></p>
+            <% } %>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
